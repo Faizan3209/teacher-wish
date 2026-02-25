@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(#f7eaea, #fdeff2);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gift Screen */
+.gift-screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift-box {
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: pop 1s ease;
+}
+
+.gift-box h2 {
+  color: #c94c6a;
+  margin-bottom: 20px;
+}
+
+.gift-box button {
+  background: #c94c6a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.gift-box button:hover {
+  background: #b13c57;
+}
+
+/* Card */
+.card {
+  background: white;
+  width: 340px;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+  animation: fadeIn 2.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.profile {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #f1c0cc;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  color: #c94c6a;
+}
+
+h1 {
+  color: #333;
+  margin: 5px 0 15px;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+span {
+  display: block;
+  margin-top: 18px;
+  font-weight: bold;
+  color: #c94c6a;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.floating {
+  position: absolute;
+  font-size: 18px;
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(-30px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.7; }
+}
+
+code {
+  display: block;
+  margin-top: 10px;
+  color: #c94c6a;
+  font-size: 13px;
+}
